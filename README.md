@@ -18,7 +18,7 @@ http://ngauthenticationapi.azurewebsites.net/api/account/register | POST
 }
 ```
 
-##Register API##
+##Authorization API##
 http://ngauthenticationapi.azurewebsites.net/token| POST
 ###Headers###
 | Name         | Value |
