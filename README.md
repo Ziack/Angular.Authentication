@@ -20,6 +20,9 @@ http://ngauthenticationapi.azurewebsites.net/api/account/register | POST
 
 ##Authorization API##
 http://ngauthenticationapi.azurewebsites.net/token| POST
+
+##Login##
+
 ###Headers###
 | Name         | Value |
 |--------------|------------------|
@@ -33,6 +36,23 @@ http://ngauthenticationapi.azurewebsites.net/token| POST
 | grant_type   | password         |
 | username     | {username}       |
 | password     | {password}       |
+| client_id    | ngAuthApp        |
+
+##Refresh##
+
+###Headers###
+| Name         | Value |
+|--------------|------------------|
+| Accept       | application/json |
+| Content-Type | x-www-form-urlencoded |
+
+###Payload###
+
+| Name         | Value |
+|--------------|------------------|
+| refresh_token   | token    |
+| grant_type   | refresh_token    |
+| client_id    | ngAuthApp        |
 
 ##Orders API##
 http://ngauthenticationapi.azurewebsites.net/api/orders| GET
